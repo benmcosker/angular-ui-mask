@@ -19,7 +19,7 @@ angular.module('ui.mask', [])
                 '*': /[a-zA-Z0-9]/
             },
             clearOnBlur: true,
-            clearPlaceholdersonBlur: true,
+            clearPlaceholdersonBlur: false,
             eventsToHandle: ['input', 'keyup', 'click', 'focus']
         })
         .directive('uiMask', ['uiMaskConfig', '$parse', function(maskConfig, $parse) {
