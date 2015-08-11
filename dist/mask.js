@@ -319,10 +319,7 @@
 
               if (!linkOptions.clearPlaceholdersonBlur) {
                 var resetValue = iElement.val().replace(/_/gi, ' ');
-                iElement.val(resetValue)
-                scope.$apply(function() {
-                  controller.$setViewValue(resetValue);
-                });
+                iElement.val(resetValue);
               }
 
               if (linkOptions.clearOnBlur) {
