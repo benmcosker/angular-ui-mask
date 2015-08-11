@@ -19,7 +19,7 @@
         '*': /[a-zA-Z0-9]/
       },
       clearOnBlur: true,
-      clearPlaceholdersonBlur: false,
+      clearPlaceholdersonBlur: true,
       eventsToHandle: ['input', 'keyup', 'click', 'focus']
     })
     .directive('uiMask', ['uiMaskConfig', '$parse', function(maskConfig, $parse) {
@@ -317,7 +317,7 @@
 
             function blurHandler() {
 
-              if (!linkOptions.clearPlaceholdersonBlur) {
+              if (linkOptions.clearPlaceholdersonBlur) {
                 var resetValue = iElement.val().replace(/_/gi, ' ');
                 iElement.val(resetValue);
               }
