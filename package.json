@@ -30,7 +30,7 @@
   "main": "./dist/mask.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/angular-ui/ui-mask.git"
+    "url": "https://github.com/benmcosker/angular-ui-mask/ui-mask.git"
   },
   "keywords": [
     "angular",
